@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>純JS網頁程式範例</title>
+  <style>
+    #form-container {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+
+    #form-container.visible {
+      display: block;
+    }
+
+    #popup-container {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+
+    #popup-container.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button id="show-form-button">顯示表單</button>
+
+  <div id="form-container">
+    <form id="my-form">
+      <label for="my-input">請輸入：</label>
+      <input type="text" id="my-input" name="my-input">
+      <br>
+      <button type="submit">送出</button>
+    </form>
+  </div>
+
+  <div id="popup-container">
+    <p id="popup-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
